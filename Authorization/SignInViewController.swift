@@ -3,7 +3,7 @@
 //  Authorization
 //
 //  Created by VK on 16.05.2022.
-//  E-mail: mr.kavy@yandex.com
+// 
 
 import UIKit
 
