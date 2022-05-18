@@ -8,7 +8,11 @@
 import UIKit
 
 class SignInViewController: UIViewController {
-
+    
+    @IBOutlet var usernameTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,10 +26,7 @@ class SignInViewController: UIViewController {
             
         }
         
-        // something wrong here
         
-        alertWrongData.addAction(action)
-        self.present(alertWrongData, animated: true, completion: nil)
     }
     
     
