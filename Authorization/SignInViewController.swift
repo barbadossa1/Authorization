@@ -15,12 +15,14 @@ class SignInViewController: UIViewController {
     private var username = "username"
     private var password = "password"
     
+    private let forgotUsernameBtn = "forgotUsername"
+    private let forgotPasswordBtn = "forgotPassword"
     
     
     // Alerts for invalid user data or empty text fields
     
     @IBAction func doneButtonPressed() {
-        if username != username && username .isEmpty || password != password && password .isEmpty {
+        if usernameTextField.text != username && username .isEmpty || passwordTextField.text != password && password .isEmpty {
             showAlert(title: "Oops...", message: "Invalid username or password")
         }
         
@@ -31,6 +33,11 @@ class SignInViewController: UIViewController {
         }
     }
     
+    // Forgot username button
+    
+    
+    ?
+    
     
     // Alerts private funcion
     
@@ -38,6 +45,13 @@ class SignInViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Ok", style: .default)
     }
+    
+    
+    // Forgot alerts button
+    
+    
+    
+    
     
 }
 
