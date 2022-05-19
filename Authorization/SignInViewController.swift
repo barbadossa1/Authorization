@@ -13,23 +13,16 @@ class SignInViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-
-
-    @IBAction func showAlertWrongData(_ sender: Any) {
-        let alertWrongData = UIAlertController(title: "Oops!", message: "Invalid username or password", preferredStyle: .alert)
-        let alertWrongAction = UIAlertAction(title: "Ok", style: .default) {
-            (action) in
-            
+    
+    
+    // something wrong
+    
+    @IBAction func doneButtonPressed() {
+        guard let inputText = usernameTextField.text, !inputText.isEmpty else {
+            print("!")
+            return
         }
-        
-        
     }
-    
-    
     
 }
 
