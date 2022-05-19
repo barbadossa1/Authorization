@@ -15,9 +15,6 @@ class SignInViewController: UIViewController {
     private var username = "username"
     private var password = "password"
     
-    private let forgotUsernameBtn = "forgotUsername"
-    private let forgotPasswordBtn = "forgotPassword"
-    
     
     // Alerts for invalid user data or empty text fields
     
@@ -28,16 +25,18 @@ class SignInViewController: UIViewController {
         
         // check that username has not numbers
         
-        if username == Double(username) {
+        if username = Double(username) {
             showAlert(title: "Oops...", message: "Do not use numbers in username field")
         }
     }
     
-    // Forgot username button
-    
-    
-    ?
-    
+    @IBAction func showAlertForgotButton(_ sender: UIButton) {
+        if sender.tag == 0 {
+            showAlert(title: "Hey!", message: "Your username is \(username)")
+        } else {
+            showAlert(title: "Hey!", message: "Your password is \(password)")
+        }
+    }
     
     // Alerts private funcion
     
@@ -47,7 +46,6 @@ class SignInViewController: UIViewController {
     }
     
     
-    // Forgot alerts button
     
     
     
