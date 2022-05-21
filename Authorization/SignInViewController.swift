@@ -22,12 +22,6 @@ class SignInViewController: UIViewController {
         if usernameTextField.text != username && username .isEmpty || passwordTextField.text != password && password .isEmpty {
             showAlert(title: "Oops...", message: "Invalid username or password")
         }
-        
-        // check that username has not numbers
-        
-        if username = Double(username) {
-            showAlert(title: "Oops...", message: "Do not use numbers in username field")
-        }
     }
     
     @IBAction func showAlertForgotButton(_ sender: UIButton) {
@@ -43,6 +37,8 @@ class SignInViewController: UIViewController {
     private func showAlert (title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(alertAction)
+        present(alert, animated: true)
     }
     
     

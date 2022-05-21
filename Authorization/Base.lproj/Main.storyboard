@@ -70,7 +70,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Forgot username?"/>
                                                         <connections>
-                                                            <action selector="showAlertForgotBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cb4-rB-6ZW"/>
+                                                            <action selector="showAlertForgotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1yn-gT-HKn"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbe-xr-h0O">
@@ -78,7 +78,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Forgot password?"/>
                                                         <connections>
-                                                            <action selector="showAlertForgotBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tp1-4A-rI3"/>
+                                                            <action selector="showAlertForgotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="erI-y6-Tc4"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -176,7 +176,6 @@
         <!--Navigation Controller-->
         <scene sceneID="2NM-rN-dHc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BDB-F3-Wu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8xe-uA-BUo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="x5O-2B-Ezy">
@@ -188,6 +187,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GtL-mb-RVp"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDB-F3-Wu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="180" y="66"/>
         </scene>
