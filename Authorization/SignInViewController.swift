@@ -3,7 +3,11 @@
 //  Authorization
 //
 //  Created by VK on 16.05.2022.
-// 
+//
+// Step 1. Check Username and Password. Go to Welcome page is the user data is correct or show the alert if it is invalid.
+// Step 2. Show alerts for "forgot username" and "forgot password" buttons.
+// Step 3. Transfer the username to the greeting text on the Welcome page
+// Step 4. Show the keyboard if the user has tapped on the username or password input field
 
 import UIKit
 
@@ -22,7 +26,10 @@ class SignInViewController: UIViewController {
         if usernameTextField.text != username && username .isEmpty || passwordTextField.text != password && password .isEmpty {
             showAlert(title: "Oops...", message: "Invalid username or password")
         }
+        
     }
+    
+    // Alerts for forgot userdata button
     
     @IBAction func showAlertForgotButton(_ sender: UIButton) {
         if sender.tag == 0 {
@@ -39,6 +46,10 @@ class SignInViewController: UIViewController {
         let alertAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(alertAction)
         present(alert, animated: true)
+    }
+    
+    private func forwartToWelcomePage() {
+        
     }
     
     

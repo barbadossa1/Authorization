@@ -56,7 +56,7 @@
                                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="21"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="bth-OJ-52J"/>
+                                                            <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="tE1-qu-gqh"/>
                                                             <segue destination="Dx4-nP-DcS" kind="presentation" modalPresentationStyle="fullScreen" id="7vi-1f-GE0"/>
                                                         </connections>
                                                     </button>
