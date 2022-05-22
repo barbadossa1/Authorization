@@ -11,7 +11,7 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -19,7 +19,9 @@ class SignInViewController: UIViewController {
     private var username = "Vadim"
     private var password = "Password"
     
-    // Transfer Username to Welcome page message
+    
+    
+    // MARK: Transfer Username to Welcome page message
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else {
@@ -29,7 +31,7 @@ class SignInViewController: UIViewController {
     }
     
     
-    // Alerts for invalid user data or empty text fields
+    // MARK: Alerts for invalid user data or empty text fields
     
     @IBAction func doneButtonPressed() {
         if usernameTextField.text != username && username .isEmpty || passwordTextField.text != password && password .isEmpty {
@@ -38,7 +40,7 @@ class SignInViewController: UIViewController {
         
     }
     
-    // Alerts for forgot userdata button
+    // MARK: Alerts for forgot userdata button
     
     @IBAction func showAlertForgotButton(_ sender: UIButton) {
         if sender.tag == 0 {
@@ -48,7 +50,7 @@ class SignInViewController: UIViewController {
         }
     }
     
-    // Alerts private funcion
+    // MARK: Alerts private funcion
     
     private func showAlert (title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -56,15 +58,6 @@ class SignInViewController: UIViewController {
         alert.addAction(alertAction)
         present(alert, animated: true)
     }
-    
-    private func forwartToWelcomePage() {
-        
-    }
-    
-    
-    
-    
-    
     
     
 }
