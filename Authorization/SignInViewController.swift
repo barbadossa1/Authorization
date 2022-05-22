@@ -16,8 +16,8 @@ class SignInViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    private var username = "username"
-    private var password = "password"
+    private var username = "Vadim"
+    private var password = "Password"
     
     // Transfer Username to Welcome page message
     
@@ -25,7 +25,7 @@ class SignInViewController: UIViewController {
         guard let welcomeVC = segue.destination as? WelcomeViewController else {
             return
         }
-        welcomeVC.usernameInLabel.text = usernameTextField.text
+        welcomeVC.personUsername = username
     }
     
     
