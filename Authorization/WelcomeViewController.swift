@@ -11,9 +11,7 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet var welcomeTextLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+
     
     @IBAction func signOutBtn() {
         dismiss(animated: true)

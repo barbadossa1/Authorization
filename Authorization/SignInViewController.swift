@@ -19,6 +19,15 @@ class SignInViewController: UIViewController {
     private var username = "username"
     private var password = "password"
     
+    // Transfer Username to Welcome page message
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else {
+            return
+        }
+        welcomeVC.usernameInLabel.text = usernameTextField.text
+    }
+    
     
     // Alerts for invalid user data or empty text fields
     
