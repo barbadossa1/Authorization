@@ -59,6 +59,11 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         present(alert, animated: true)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
     
 }
 
