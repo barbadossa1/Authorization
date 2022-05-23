@@ -34,7 +34,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     // MARK: Alerts for invalid user data or empty text fields
     
     @IBAction func doneButtonPressed() {
-        if usernameTextField.text != username && username .isEmpty || passwordTextField.text != password && password .isEmpty {
+        if usernameTextField.text != username || passwordTextField.text != password {
             showAlert(title: "Oops...", message: "Invalid username or password")
         }
         
@@ -63,7 +63,5 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
-    
-    
 }
 
